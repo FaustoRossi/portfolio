@@ -1,0 +1,49 @@
+// ***********Animation section 1 **********
+@keyframes animation1 {
+  0% {
+    transform: translate(-100px, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@keyframes downArrow {
+  0% {
+    transform: translateY(0px);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(25px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 0.5;
+  }
+}
+
+// *************Transition Section 2 *********************
+@keyframes animation2 {
+  0% {
+    transform: translate(0, 100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+// *************Transition Section 2 *********************
+
+@keyframes animation3 {
+  0% {
+    transform: translate(100px, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}

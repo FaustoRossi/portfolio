@@ -1,0 +1,174 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="./styles/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <!-- NAV BAR -->
+        <nav class="navbar">
+          <div class="brand-title"> <img src="./Assets/code-open.png" alt=""> Portfolio <img src="./Assets/code-close.png" alt=""></div>
+          <div class="navLinks">
+          <ul>
+            <li class="homeNavIitem" ><a href="#home">Home</a></li>
+            <li class="aboutNavIitem"><a href="#about">About</a></li>
+            <li class="projectsNavIitem"><a href="#projects">Projects</a></li>
+            <li class="skillsNavIitem"><a href="#skills">Skills</a></li>
+            <li class="contactNavIitem"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        </nav>
+        <!-- NAV BAR BOOTSTRAP #212529 <a class="navbar-brand" href="#"> <img src="./Assets/code-open.png" alt=""> Fausto Rossi <img src="./Assets/code-close.png" alt=""></a> -->
+
+          <!-- Cover -->
+        <div class="main">
+          <section class="cover" >
+            
+            <div id='home' class="desk">
+             
+                <div class="name">
+                <div class="intro">
+                   
+                <h1 > Fausto Rossi</h1>
+                
+                <p class="animateP"> Front End Developer</p>
+              </div>
+                <div  class="arrow"> <a href="#about"> <img src="/Assets/arrow.png" alt=""> <a/></div>
+            </div>
+            
+            </div>
+            
+          </section>
+             <!-- Cover -->
+
+             <!-- ABOUT -->
+             <section id='about' class='about'>
+               <div class="about-me">
+                <h2 >Something about me</h2>
+                <p >My name is Fausto and I’m a self-taught programmer. I discovered my passion in programming early in quarantine. Soon, I found myself enjoying  while studying at the same time. I like to learn something new everyday. </p>
+               </div>
+              </section>
+                <!-- ABOUT -->
+
+                  <!-- PROJECTS -->
+
+                  <section id='projects' class="projects">
+                    <div class="card">
+                      <div class="content">
+                        <h2 class="title">Ping Points</h2>
+                        <p class="copy">Web App used to keep track of the score during a Ping Pong match </p>
+                        <button class="btn"  onclick="location.href='https://pingpoints.netlify.app/';"target=”_blank” >Check it out</button>
+                        <button class="btn" onclick="location.href='https://github.com/FaustoRossi/Ping-Pong-Score-Keeper'" >Repo</button>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="content">
+                        <h2 class="title">Drum Kit</h2>
+                        <p class="copy">Interactive drum kit to play around</p>
+                        <button class="btn" onclick="location.href='https://dramkeet.netlify.app/';">Check it out</button>
+                        <button class="btn" onclick="location.href='https://github.com/FaustoRossi/drum-kit'" >Repo</button>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="content">
+                        <h2 class="title">React Unsplash API</h2>
+                        <p class="copy">Image search using Unsplash API and how results are positioned </p>
+                        <button class="btn" onclick="location.href='https://faustorossi.github.io/pics-search-react/';">Check it out</button>
+                        <button class="btn" onclick="location.href='https://github.com/FaustoRossi/pics-search-react'" >Repo</button>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="content">
+                        <h2 class="title">React Youtube API</h2>
+                        <p class="copy">Video search for youtube videos using 4 components</p>
+                        <button class="btn" onclick="location.href='https://faustorossi.github.io/react-video-api/';">Check it out</button>
+                        <button class="btn" onclick="location.href='https://github.com/FaustoRossi/react-video-api'"" >Repo</button>
+                      </div>
+                    </div>
+
+
+                  </section>
+
+
+                  <!-- Skills -->
+
+                  <section id='skills' class="skills">
+
+                  <div class="skillsIntro">
+                    
+                    <h2 id='animate'>Skills</h2>
+                    <p id='animate'> These are the technologies I am familiar with</p>
+
+                  </div>
+                  <div class="icons">
+                    <ul style="list-style: none">
+                      <li><img src="/Assets/html.png" alt="" class=""><p>HTML</p></li>
+                      <li><img src="/Assets/css.png" alt="" class=""> <p>CSS</p></li>
+                      <li><img src="/Assets/sass.png" alt="" class=""><p>Sass</p></li>
+                      <li><img src="/Assets/bootstrap.png" alt="" class=""><p>Bootstrap</p></li>
+                      <li><img src="/Assets/javascript.png" alt="" class=""><p>Javascript</p></li>
+                      <li><img src="/Assets/figma.png" alt="" class=""><p>Figma</p></li>
+                      <li><img src="/Assets/lightroom.png" alt="" class=""><p>Lightroom</p></li>
+                      <li><img src="/Assets/git.png"><p>Git</p></li>
+                      <li><img src="/Assets/github.png"><p>Github</p></li>
+                    </ul>
+
+
+                  </div>
+
+
+                  </section>
+
+                  <!-- Skills -->
+                  <section id='contact' class="contact">
+
+                    <div class="contactIntro">
+                     <h2> Let's get in touch</h2>
+                    </div>
+                    
+                      <div class="contactIcon">
+                        <ul style="list-style: none">
+            
+                          <li class='linkedin'><a href="https://www.linkedin.com/in/fausto-rossi-2792871b8?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Brt3x4T4nRh6gyTeCsF8YmQ%3D%3D"><img src="/Assets/linkedin.png" alt=""></a></li>
+                          <li class='gmail'><a href='https://mail.google.com/mail/u/1/?view=cm&fs=1&to=faaustor@gmail.com&tf=1
+                            ">faaustor@gmail.com'><img src="/Assets/gmail.png" alt=""></a></li>
+                          <li class='wsap'><a href='https://wa.me/543446370455'><img src="/Assets/whatsapp.png" alt=""></a></li>
+                        </ul>
+                      </div>
+                  
+                  </section>
+                  </div>
+
+
+             
+            
+          
+          
+          
+          
+          
+          
+          
+          
+            <!-- <div class="container">
+                <div class="row">
+                  <div class="col-sm-">
+                   <h2>Something about me</h2>
+            <p>My name is Fausto and I’m a self-taught programmer. I found my passion in programming during quarantine and have been learning and looking into related content videos ever since in my spare time</p>
+                  </div> -->
+
+
+          
+
+        
+
+        
+        <script src="/app.js"></script>
+    </body>
+    </html>

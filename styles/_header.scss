@@ -1,0 +1,67 @@
+@import "./variables";
+body {
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 53px;
+  background-color: #212529;
+  color: $bgColor1;
+  font-family: $font;
+  transition: all 0.35s ease;
+}
+
+.brand-title {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+
+.brand-title > img {
+  transform: translateY(5.5px);
+}
+
+.navLinks {
+  height: 100%;
+}
+
+.navLinks ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navLinks li {
+  list-style: none;
+}
+
+.navLinks li a {
+  display: block;
+  text-decoration: none;
+  padding: 1rem;
+  color: $bgColor1;
+  position: relative;
+}
+
+.navLinks li a::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 0;
+  height: 2px;
+  background-color: #c3a368;
+  transition: opacity 0.3s ease, width 0.3s ease;
+}
+.navLinks li a:hover:after {
+  width: 100%;
+}
+
+// .active {
+//   background-color: #c3a368;
+//   transition: opacity 0.3s ease, width 0.3s ease;
+//   width: 100%;
+// }
