@@ -2,7 +2,7 @@ const toggle = document.querySelector(".toggle");
 const navLinks = document.querySelector(".navLinks");
 
 toggle.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
+  navLinks.classList.toggle("active"), toggle.classList.toggle("active");
 });
 
 // Activar Scroll Animation

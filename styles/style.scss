@@ -190,6 +190,7 @@ section {
   padding: 0.75rem 1.5rem;
   font-size: 0.65rem;
   font-weight: bold;
+  font-family: $font;
   letter-spacing: 0.025rem;
   text-transform: uppercase;
   color: white;
@@ -333,6 +334,11 @@ section {
   justify-content: space-evenly;
   flex-wrap: wrap;
   transform: translateX(-16px);
+}
+
+.contactIcon > ul > li:hover {
+  transform: rotate(360deg);
+  transition: all 0.3s ease;
 }
 .contactIcon > ul > li {
   margin: 35px;

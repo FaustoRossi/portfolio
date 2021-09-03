@@ -85,6 +85,16 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-transform: scale(0 0) rotate(-360deg);
+            transform: scale(0 0) rotate(-360deg);
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+  .toggle.active {
+    -webkit-transform: scale(1.3, 1.3) rotate(360deg);
+            transform: scale(1.3, 1.3) rotate(360deg);
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
   }
   .navLinks {
     display: none;
@@ -503,6 +513,7 @@ section {
   padding: 0.75rem 1.5rem;
   font-size: 0.65rem;
   font-weight: bold;
+  font-family: "Poppins", sans-serif;
   letter-spacing: 0.025rem;
   text-transform: uppercase;
   color: white;
@@ -721,6 +732,13 @@ section {
       flex-wrap: wrap;
   -webkit-transform: translateX(-16px);
           transform: translateX(-16px);
+}
+
+.contactIcon > ul > li:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .contactIcon > ul > li {
