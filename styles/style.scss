@@ -6,7 +6,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 section {
@@ -35,6 +36,7 @@ section {
 .name p {
   font-size: 25px;
   text-align: center;
+  font-weight: bold;
 }
 .animateP {
   animation: animation1 1500ms cubic-bezier(0.65, 0.05, 0.36, 1) normal;
@@ -44,9 +46,7 @@ section {
   opacity: 1;
   animation: downArrow 3000ms infinite;
 }
-// .arrow:hover {
-//   transform: translateY(25px);
-// }
+
 .about {
   @include flexCenter();
   background: $bgColor1;
@@ -106,10 +106,12 @@ section {
   background-color: whitesmoke;
   box-shadow: 0 1px 1px $boxColor, 0 2px 2px $boxColor, 0 4px 4px $boxColor,
     0 8px 8px $boxColor, 0 16px 16px $boxColor;
+  z-index: 0.9;
 }
-@media (min-width: 600px) {
+@media (max-width: 600px) {
   .card {
     height: 350px;
+    margin-left: 10%;
   }
 }
 .card:before {
@@ -121,7 +123,8 @@ section {
   height: 110%;
   background-size: cover;
   background-position: 0 0;
-  transition: transform calc($time * 1.5) $movement;
+  transition: transform 700ms $movement;
+
   pointer-events: none;
 }
 
@@ -286,6 +289,29 @@ section {
   transition: all 0.3s ease;
 }
 
+@media (max-width: 600px) {
+  .cover {
+    background-image: url(../Assets/mobile-background.jpg);
+
+    background-size: cover;
+  }
+  .skills {
+    flex-direction: column;
+  }
+
+  .skillsIntro {
+    width: 100%;
+    text-align: center;
+    margin: -50%;
+  }
+
+  .icons {
+    margin-left: 10%;
+  }
+  .main {
+    scroll-snap-type: none;
+  }
+}
 .contact {
   @include flexCenter();
   background-color: $bgColor2;
